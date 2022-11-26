@@ -1,3 +1,8 @@
 import 'package:get/get.dart';
+import 'package:multiple_countdown_timer/mct_exporter.dart';
 
-class TimerController extends GetxController {}
+abstract class MCTTimerController extends GetxController {
+  List<MCTTimerDomain> findAll();
+
+  MCTTimerDomain create(String name, Duration duration);
+}
