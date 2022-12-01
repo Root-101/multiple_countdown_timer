@@ -1,6 +1,6 @@
 import 'package:multiple_countdown_timer/mct_exporter.dart';
 
-class MCTTimerControllerImpl extends MCTTimerController {
+class MCTCountdownControllerImpl extends MCTCountdownController {
   List<MCTTimerDomain> all = [
     MCTTimerDomain(
       name: 'Test 1',

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:multiple_countdown_timer/mct_exporter.dart';
 
-class MCTCreateButton extends StatelessWidget {
-  const MCTCreateButton({Key? key}) : super(key: key);
+class MCTCountdownCreateButton extends StatelessWidget {
+  const MCTCountdownCreateButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class MCTCreateButton extends StatelessWidget {
         Icons.add,
       ),
       onPressed: () {
-        Get.toNamed(Timer.ROUTE_NAME);
+        Get.toNamed(MCTModifyTimer.ROUTE_NAME);
       },
     );
   }

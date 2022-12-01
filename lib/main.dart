@@ -33,16 +33,16 @@ Widget _app(ThemeData theme) {
     theme: theme,
     //--------------------- </THEAMING> -----------------------------------
     //--------------------- <PAGINATION> -----------------------------------
-    initialRoute: MCTMainScreen.ROUTE_NAME,
+    initialRoute: MCTCountDownHomeScreen.ROUTE_NAME,
     getPages: [
       GetPage(
-        name: MCTMainScreen.ROUTE_NAME,
-        page: () => MCTMainScreen(),
+        name: MCTCountDownHomeScreen.ROUTE_NAME,
+        page: () => MCTCountDownHomeScreen(),
         transition: Transition.leftToRight,
       ),
       GetPage(
-        name: Timer.ROUTE_NAME,
-        page: () => Timer(),
+        name: MCTModifyTimer.ROUTE_NAME,
+        page: () => MCTModifyTimer(),
         transition: Transition.rightToLeft,
       ),
     ],
@@ -81,6 +81,6 @@ class Init {
   static final instance = Init._();
 
   Future initialize() async {
-    await USSDUIModule.init();
+    await MCTFeaturesModule.init();
   }
 }
