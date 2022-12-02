@@ -5,6 +5,10 @@ class MCTFeaturesModule {
   static Future init() async {
 
     await USSDCountdownModule.init();
+
+    //notificatiosn primero que el foreground
+    await MCTLocalNotification().initializeService();
+    await MCTForegroundService().initializeService();
   }
 
 }
