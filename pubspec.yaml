@@ -18,6 +18,14 @@ dependencies:
   clean_core: ^1.3.4-SNAPSHOT.20221002
 
   #Time
+  circular_countdown_timer:
+    path: ../../Forks/circular_countdown_timer
+
+  #background work
+  flutter_background_service: ^2.4.5
+  device_info_plus: ^8.0.0
+  flutter_local_notifications: ^12.0.4
+  shared_preferences: ^2.0.15
 
   #Notifications & Dialogs
   awesome_dialog: ^3.0.1
@@ -35,9 +43,6 @@ dependencies:
   clean_repo_objectbox: ^1.1.0-RELEASE.20221002
 
   cupertino_icons: ^1.0.2
-
-  circular_countdown_timer:
-    path: ../../Forks/circular_countdown_timer
 
 dev_dependencies:
   flutter_test:
